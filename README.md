@@ -142,6 +142,35 @@ The UI cursor highlights the selected menu item and interacts on button presses.
 > *Note: Replace the above images with your actual screenshots or simulation captures.*
 
 ---
+## Visualizations & Dashboard
+
+Below are screenshots of the Node-RED dashboard, which visualizes light intensity, servo angle, and allows real-time adjustment of device parameters.
+
+### Node-RED Dashboard – Main View
+
+<img src="./images/node_red_dashboard_1.png" width="700" alt="Node-RED Dashboard Main View">
+
+### Node-RED Dashboard – Parameter Adjustment
+
+<img src="./images/node_red_dashboard_2.png" width="700" alt="Node-RED Dashboard with Parameter Sliders">
+
+---
+
+## Simulation & Code Resources
+
+- **Circuit Simulation:**  
+  The full ESP32-based Medibox circuit can be simulated using Wokwi. See:  
+  `diagram.json`
+
+- **Node-RED Flow:**  
+  All dashboard logic and MQTT processing is available as:  
+  `flows.json`
+
+To use:
+- Import `diagram.json` at [wokwi.com](https://wokwi.com/) to test and verify your Medibox circuit and code.
+- Import `flows.json` into your Node-RED dashboard (via Menu > Import > Clipboard) to instantly recreate the dashboard.
+
+
 
 ## Future Improvements
 
