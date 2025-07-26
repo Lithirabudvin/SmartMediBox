@@ -1,0 +1,649 @@
+[
+    {
+        "id": "27c9f5504a31aa7f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8bcfd544e140f101",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "48d2a0982f486e6e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2d444a31bd43379b",
+        "type": "ui_group",
+        "name": "IOT Dashboard",
+        "tab": "8bcfd544e140f101",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62baf098ec5cb1a3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "tab123",
+        "type": "ui_tab",
+        "name": "Medibox Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "broker123",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Broker",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "group123",
+        "type": "ui_group",
+        "name": "Medibox Monitoring",
+        "tab": "tab123",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "group456",
+        "type": "ui_group",
+        "name": "Configuration",
+        "tab": "tab123",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a1b2c3d4.5e6f78",
+        "type": "mqtt in",
+        "z": "27c9f5504a31aa7f",
+        "name": "Subscribe LDR",
+        "topic": "220077L/medibox/ldr",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "62baf098ec5cb1a3",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 240,
+        "y": 380,
+        "wires": [
+            [
+                "gauge123",
+                "chart123"
+            ]
+        ]
+    },
+    {
+        "id": "gauge123",
+        "type": "ui_gauge",
+        "z": "27c9f5504a31aa7f",
+        "name": "Light Intensity",
+        "group": "group123",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Light Intensity",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "0.3",
+        "seg2": "0.7",
+        "diff": false,
+        "className": "",
+        "x": 540,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "chart123",
+        "type": "ui_chart",
+        "z": "27c9f5504a31aa7f",
+        "name": "Light History",
+        "group": "group123",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Light Intensity History",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 540,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1b2c3d4.5e6f79",
+        "type": "mqtt in",
+        "z": "27c9f5504a31aa7f",
+        "name": "Subscribe Temp",
+        "topic": "220077L/medibox/temperature",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "62baf098ec5cb1a3",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 240,
+        "y": 500,
+        "wires": [
+            [
+                "gauge456",
+                "chart456"
+            ]
+        ]
+    },
+    {
+        "id": "gauge456",
+        "type": "ui_gauge",
+        "z": "27c9f5504a31aa7f",
+        "name": "Temperature",
+        "group": "group123",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-50",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "diff": false,
+        "className": "",
+        "x": 540,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "chart456",
+        "type": "ui_chart",
+        "z": "27c9f5504a31aa7f",
+        "name": "Temp History",
+        "group": "group123",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature History",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-50",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff7f0e",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1b2c3d4.5e6f80",
+        "type": "mqtt in",
+        "z": "27c9f5504a31aa7f",
+        "name": "Subscribe Servo",
+        "topic": "220077L/medibox/servo_angle",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "62baf098ec5cb1a3",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 240,
+        "y": 620,
+        "wires": [
+            [
+                "gauge789"
+            ]
+        ]
+    },
+    {
+        "id": "gauge789",
+        "type": "ui_gauge",
+        "z": "27c9f5504a31aa7f",
+        "name": "Servo Angle",
+        "group": "group123",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Servo Angle",
+        "label": "°",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "180",
+        "colors": [
+            "#1f77b4",
+            "#9467bd",
+            "#8c564b"
+        ],
+        "seg1": "60",
+        "seg2": "120",
+        "diff": false,
+        "className": "",
+        "x": 540,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "slider123",
+        "type": "ui_slider",
+        "z": "27c9f5504a31aa7f",
+        "name": "Sample Interval (s)",
+        "label": "Sample Interval (s)",
+        "tooltip": "",
+        "group": "group456",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": 1,
+        "max": "60",
+        "step": 1,
+        "className": "",
+        "x": 240,
+        "y": 740,
+        "wires": [
+            [
+                "join123"
+            ]
+        ]
+    },
+    {
+        "id": "slider456",
+        "type": "ui_slider",
+        "z": "27c9f5504a31aa7f",
+        "name": "Send Interval (s)",
+        "label": "Send Interval (s)",
+        "tooltip": "",
+        "group": "group456",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": 10,
+        "max": "300",
+        "step": 5,
+        "className": "",
+        "x": 240,
+        "y": 800,
+        "wires": [
+            [
+                "join123"
+            ]
+        ]
+    },
+    {
+        "id": "slider789",
+        "type": "ui_slider",
+        "z": "27c9f5504a31aa7f",
+        "name": "Theta Offset (°)",
+        "label": "Theta Offset (°)",
+        "tooltip": "",
+        "group": "group456",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": "120",
+        "step": 1,
+        "className": "",
+        "x": 240,
+        "y": 860,
+        "wires": [
+            [
+                "join123"
+            ]
+        ]
+    },
+    {
+        "id": "slider012",
+        "type": "ui_slider",
+        "z": "27c9f5504a31aa7f",
+        "name": "Gamma (γ)",
+        "label": "Gamma (γ)",
+        "tooltip": "",
+        "group": "group456",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": "1",
+        "step": 0.01,
+        "className": "",
+        "x": 240,
+        "y": 920,
+        "wires": [
+            [
+                "join123"
+            ]
+        ]
+    },
+    {
+        "id": "slider345",
+        "type": "ui_slider",
+        "z": "27c9f5504a31aa7f",
+        "name": "Tmed (°C)",
+        "label": "Tmed (°C)",
+        "tooltip": "",
+        "group": "group456",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": 10,
+        "max": "40",
+        "step": 0.5,
+        "className": "",
+        "x": 240,
+        "y": 980,
+        "wires": [
+            [
+                "join123"
+            ]
+        ]
+    },
+    {
+        "id": "join123",
+        "type": "join",
+        "z": "27c9f5504a31aa7f",
+        "name": "Combine Parameters",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 440,
+        "y": 860,
+        "wires": [
+            [
+                "function123"
+            ]
+        ]
+    },
+    {
+        "id": "function123",
+        "type": "function",
+        "z": "27c9f5504a31aa7f",
+        "name": "Format Config",
+        "func": "// Get all parameter values\nconst params = msg.payload.split('\\n');\n\n// Create configuration message\nmsg.payload = `${params[0]},${params[1]},${params[2]},${params[3]},${params[4]}`;\nmsg.topic = \"220077L/medibox/config\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 860,
+        "wires": [
+            [
+                "mqttout123"
+            ]
+        ]
+    },
+    {
+        "id": "mqttout123",
+        "type": "mqtt out",
+        "z": "27c9f5504a31aa7f",
+        "name": "Publish Config",
+        "topic": "220077L/medibox/config",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62baf098ec5cb1a3",
+        "x": 840,
+        "y": 860,
+        "wires": []
+    }
+]
