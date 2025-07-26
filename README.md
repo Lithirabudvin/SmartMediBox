@@ -140,8 +140,6 @@ The UI cursor highlights the selected menu item and interacts on button presses.
 ![Wokwi Circuit Simulation](./images/wokwi_circuit_simulation.png)  
 *Wokwi simulation with ESP32, sensors, buttons, and OLED.*
 
-> *Note: Replace the above images with your actual screenshots or simulation captures.*
-
 ---
 ## Visualizations & Dashboard
 
@@ -188,8 +186,6 @@ To use:
 
 This project is based on the EN2853: Embedded Systems and Applications course.  
 Developed by Lithira Budvin using Wokwi simulation and ESP32 platform.
-
----
 
 ---
 
