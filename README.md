@@ -15,6 +15,7 @@ This repository contains the firmware and circuit design for the **Smart MediBox
 - [Setup & Usage](#setup--usage)
 - [How It Works](#how-it-works)
 - [Screenshots & Simulation](#screenshots--simulation)
+- [Visualizations & Dashboard](#viualization--dashboard)
 - [Future Improvements](#future-improvements)
 - [Acknowledgements](#acknowledgements)
 
@@ -148,7 +149,7 @@ Below are screenshots of the Node-RED dashboard, which visualizes light intensit
 
 ### Node-RED Dashboard – Main View
 
-<img src="./images/node_red_dashboard_1.png" width="700" alt="Node-RED Dashboard Main View">
+<img src="./images/node_red_dasboard_1.png" width="700" alt="Node-RED Dashboard Main View">
 
 ### Node-RED Dashboard – Parameter Adjustment
 
